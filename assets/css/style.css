@@ -1,25 +1,25 @@
-:root{
+:root {
     --color-principal: #FFFFFF;
     --color-secondary: #22b455;
     --color-background: #f2f7f9;
     --color-transparent: transparent;
-    --color-icon:#b5b6b7;
-    --color-title:#222222;
+    --color-icon: #b5b6b7;
+    --color-title: #222222;
     --color-subtitle: #888;
-    --color-txt:#555;
+    --color-txt: #555;
 }
 
 /*Estilos generales*/
-html{
+html {
     font-size: 10px;
     /*con esto puedo manejarme en rem para todo los elementos de forma facil*/
 
 }
 
-body{
+body {
     width: 100%;
     height: auto;
-    font-family: "Poppins", Arial, Helvetica, sans-serif ;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     background-color: var(--color-background);
     color: var(--color-txt);
@@ -27,13 +27,18 @@ body{
 
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--color-title);
 }
 
 /*Background*/
 
-body{
+body {
     background-image: url(../img/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +48,7 @@ body{
 
 /*Estructura Principal*/
 
-.wrapper{
+.wrapper {
     position: relative;
     min-width: 1290px;
     width: 75%;
@@ -51,7 +56,7 @@ body{
     min-height: 80vh;
     margin: 10vh auto;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "aside content"
     ;
     grid-template-columns: 30% 70%;
@@ -61,14 +66,14 @@ body{
 
 /*barra lateral*/
 
-.wrapper__aside{
+.wrapper__aside {
     grid-area: aside;
     border-radius: 5rem 0 0 5rem;
     overflow: auto;
     overflow-x: hidden;
 }
 
-.aside__userinfo{
+.aside__userinfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,19 +81,19 @@ body{
     min-height: 100%;
     min-width: 30rem;
     background-color: var(--color-secondary);
-    color:var(--color-principal);
+    color: var(--color-principal);
 }
 
-.userinfo__containerimg{
+.userinfo__containerimg {
     position: relative;
-    display:inline-block;
+    display: inline-block;
     width: 22rem;
     margin-top: 8rem;
     z-index: 1;
 
 }
 
-.userinfo__img{
+.userinfo__img {
     width: 100%;
     background-color: var(--color-principal);
     border: 2px solid var(--color-principal);
@@ -97,41 +102,45 @@ body{
 
 /*Pseudoelemento*/
 
-.userinfo__containerimg::after{
+.userinfo__containerimg::after {
     content: "hola";
-    position:absolute;
+    position: absolute;
     top: -4%;
-    left:-4%;
+    left: -4%;
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: -webkit-repeating-radial-gradient(center center, #FFF,#fff 1.5px, transparent 0px, transparent 100%);
+    background-image: -webkit-repeating-radial-gradient(center center, #FFF, #fff 1.5px, transparent 0px, transparent 100%);
     background-size: 0.6rem 0.6rem;
     border-radius: 30rem;
     opacity: 0.5;
 }
 
-.userinfo__name{
+.userinfo__name {
     color: var(--color-principal);
     font-size: 3rem;
     margin-top: 3rem;
-
 }
-.userinfo__job{
+
+
+
+.userinfo__job {
     font-size: 2rem;
     font-weight: 200;
     color: var(--color-principal);
 }
 
-.userinfo__links{
+.userinfo__links {
     margin-bottom: 4rem;
 }
-.links__social{
+
+.links__social {
     display: flex;
     text-align: center;
     margin-top: 2rem;
 }
-.social__option{
+
+.social__option {
     height: 3rem;
     width: 3rem;
     font-size: 3rem;
@@ -140,37 +149,40 @@ body{
     border-radius: 3rem;
     transition: all 300ms ease-in-out;
 }
-.social__option:hover{
+
+.social__option:hover {
     opacity: 1;
-    background-color: rgba(255,255,255,0.20);
+    background-color: rgba(255, 255, 255, 0.20);
 }
 
-.userinfo__buttons{
+.userinfo__buttons {
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-.userinfo__btn{
+
+.userinfo__btn {
     border: 2px solid var(--color-principal);
     padding: 3rem;
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
     border-radius: 4rem;
     color: var(--color-principal);
-    box-shadow: 0 15px 15px -3px rgba(0,0,0,0.25);
+    box-shadow: 0 15px 15px -3px rgba(0, 0, 0, 0.25);
 }
-.userinfo__btn:hover{
+
+.userinfo__btn:hover {
     background-color: var(--color-principal);
     color: var(--color-secondary);
     transition: all 400ms ease-in-out;
 }
 
-.userinfo_footer{
+.userinfo_footer {
     position: absolute;
     bottom: 2rem;
     font-size: 1.2rem;
 }
 
-.wrapper__content{
+.wrapper__content {
     grid-area: content;
     background-color: var(--color-secondary);
     border-radius: 0 10rem 10rem 0;
@@ -178,7 +190,7 @@ body{
     min-height: 100%;
 }
 
-.content__page{
+.content__page {
     min-height: 100%;
     background-color: var(--color-principal);
     border-radius: 3rem;
@@ -188,12 +200,111 @@ body{
     justify-content: center;
 }
 
+.page__name {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    position:relative;
+
+}
+.page__name:after{
+    content:"";
+    border-left: 1px solid black;
+    background-color: var(--color-principal);
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    animation: maquinadeescribir 3s infinite alternate steps(17);
+}
+
+@keyframes maquinadeescribir {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0%;
+    }
+    
+}
+.page__job {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--color-subtitle);
+}
 
 
 
 
 
 
-.wrapper__menu{
-    display: none !important;
+
+.wrapper__menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    background-color: var(--color-transparent);
+    min-width: 10rem;
+}
+
+.menu__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--color-principal);
+    width: 60%;
+    min-height: 30rem;
+    box-shadow: 0 0 3rem -0.5rem rgba(0 0 0 0.15);
+    border-radius: 5rem;
+
+
+}
+
+.menu__icon {
+    color: var(--color-icon);
+    font-size: 3rem;
+    transition: all 400ms ease-in-out;
+
+}
+
+.menu__option {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.menu__option:hover .menu__icon {
+    color: var(--color-secondary)
+}
+
+.menu__overlay {
+    position: absolute;
+    right: 0;
+    margin-top: -3.2rem;
+    opacity: 0;
+    display: block;
+    color: var(--color-principal);
+    padding: 0.5rem;
+    background-color: var(--color-secondary);
+    white-space: nowrap;
+    transition: all 300ms ease-in-out;
+
+}
+
+.menu__option:hover .menu__overlay {
+    opacity: 1;
+    right: 100%;
+    border-radius: 2rem;
+}
+
+
+/*Sobremi*/
+
+/*para el scroll*/
+.content__about{
+    height: 100%;
+    overflow: auto;
+    padding: 8rem;
+    display: block;
 }
