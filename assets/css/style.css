@@ -8,6 +8,12 @@
     --color-subtitle: #888;
     --color-txt: #555;
 }
+@font-face {
+    font-family: "JMH Typewriter";
+    src: url("/assets/fonts/jmh_typewriter/JMH\ Typewriter-Thin.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
 
 /*Estilos generales*/
 html {
@@ -39,7 +45,7 @@ h6 {
 /*Background*/
 
 body {
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -40px -40px;
@@ -198,6 +204,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "JMH Typewriter";
 }
 
 .page__name {
