@@ -3,7 +3,7 @@
 /*Scroll para Chrome*/
 
 .content__page::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
     background: transparent;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .content__page:hover::-webkit-scrollbar-thumb{
-    box-shadow: inset  0 0 0 5px transparent;
+    box-shadow: inset  0 0 0 5px var(--color-principal);
 
 }
 
@@ -44,8 +44,8 @@
 /*Scroll para Chrome para la barra lateral de la izq*/
 
 .wrapper__aside::-webkit-scrollbar{
-    width: 25px;
-    background: var(--color-secondary);
+    width: 10px;
+    background: black;
 }
 
 .wrapper__aside::-webkit-scrollbar-thumb{
@@ -55,12 +55,12 @@
 }
 
 .wrapper__aside:hover::-webkit-scrollbar-thumb{
-    box-shadow: inset  0 0 0 5px #FFF;
+    box-shadow: inset  0 0 0 5px var(--color-principal);
 
 }
 
 .wrapper__aside:hover::-webkit-scrollbar-thumb:hover{
-    box-shadow: inset  0 0 0 5px transparent;
+    box-shadow: inset  0 0 0 5px var(--color-secondary);
     border: 0.2px solid transparent;
 
 }
