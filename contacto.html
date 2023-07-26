@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/map.js" defer></script>
     <title>Portafolio - Gonzalo Velasco</title>
 </head>
 
@@ -85,7 +87,8 @@
                 </div>
                 <!--Btn-->
                 <div class="userinfo__buttons">
-                    <a href="assets/Curriculum vitae - Gonzalo Javier Velasco.pdf class="userinfo__btn" download>Descargar CV</a>
+                    <a href="assets/Curriculum vitae - Gonzalo Javier Velasco.pdf" class="userinfo__btn"
+                        download>Descargar CV</a>
                 </div>
                 <!--Footer-->
                 <footer class="userinfo__footer">
@@ -102,6 +105,67 @@
                         Contacto
                     </h2>
                 </header>
+
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <i class="contact__ico fa-solid fa-location-dot"></i>
+                            <h2 class="contact__subtitle2">Córdoba</h2>
+                        </div>
+                        <div class="contact__item">
+                            <i class="contact__ico fa-solid fa-phone"></i>
+                            <h2 class="contact__subtitle2">3517-549475</h2>
+                        </div>
+                        <div class="contact__item">
+                            <i class="contact__ico fa-solid fa-mail-bulk"></i>
+                            <h2 class="contact__subtitle2">gonilovemor@gmail.com</h2>
+                        </div>
+                        <div class="contact__item">
+                            <i class="contact__ico fa-solid fa-check-circle"></i>
+                            <h2 class="contact__subtitle2">Desarrollador web <br> Analista de sistemas</h2>
+                        </div>
+                    </div>
+                    <div class="contact__formulary">
+                        <div class="contact__map" id="loadiframemap">
+                            <span class="loader"></span>
+                        </div>
+                        <header class="contact__formheader">
+                            <h3 class="contact__subtitle">
+                                Enviame tu <span class="title__color">Consulta</span>
+                            </h3>
+                        </header>
+                        <form class="contact__form">
+                            <div class="form__container">
+                                <div class="form__left">
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="name" required
+                                            placeholder="Nombre">
+                                        <label for="name" class="form__label">Nombre</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" name="email" required
+                                            placeholder="E-mail">
+                                        <label for="name" class="form__label">E-mail</label>
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="subject" required
+                                            placeholder="Asunto">
+                                        <label for="subject" class="form__label">Asunto</label>
+                                    </div>
+                                </div>
+                                <div class="form__right">
+                                    <div class="form__group form__group--textarea">
+                                        <textarea class="form__input form__input--textarea" name="message" required
+                                            placeholder="Mensaje"></textarea>
+                                        <label for="message" class="form__label">Mensaje</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <input type="submit" class="form__btn" value="Enviar Mensaje">
+                        </form>
+                    </div>
+                </div>
 
             </section>
 
