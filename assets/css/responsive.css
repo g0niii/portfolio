@@ -177,12 +177,12 @@
         height: 4rem;
         line-height: 5rem;
         text-align: center;
-        background-color: var(--color-secondary);
+        background-color: var(#000000);
         right: 1rem;
         top: 1rem;
         font-size: 2rem;
         border-radius: 3rem;
-        color: var(--color-principal);
+        color: var(--color-secondary);
         cursor: pointer;
         transition: all 400ms ease-in-out;
 
@@ -190,11 +190,20 @@
 
     .menutoggle__icon {
         display: block;
-        padding: 1rem;
+        position: absolute;
+        top: 25%;
+        right: 29%;
+        transition: all 200ms ease-in-out;
     }
 
+
+    .fa-bars{
+        opacity: 1;
+    }
     .fa-xmark {
-        display: none;
+        opacity: 0;
+        font-size: 2.5rem;
+        position: absolute;
     }
 
 
