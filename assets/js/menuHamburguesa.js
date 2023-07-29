@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         icon_xmark.style.opacity=0;
       }
     });
+    window.addEventListener("resize", ()=>{
+        let size = parseInt(document.body.clientWidth);
+        if(size<=1080){
+            aside.classList.remove("wrapper__aside--visible");
+            icon_bars.style.opacity=1;
+            icon_xmark.style.opacity=0;
+        }
+    })
   });
 
 
