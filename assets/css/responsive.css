@@ -243,12 +243,7 @@
         flex-direction: column;
     }
 
-    .timelines__line {
-
-        left: 42%;
-    }
-
-    .personalinfo__option {
+     .personalinfo__option {
         font-size: 1.4rem;
         display: flex;
         flex-direction: column;
