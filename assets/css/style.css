@@ -398,6 +398,8 @@ body {
 .personalinfo__description{
     font-size: 1.7rem;
     line-height: 2rem;
+    text-align: justify;
+
 }
 
 .personalinfo__option{
@@ -552,10 +554,13 @@ body {
     width: 85%;
 }
 .skills__percentage--p3{
-    width: 70%;
+    width: 60%;
 }
 .skills__percentage--p4{
     width: 50%;
+}
+.skills__percentage--p5{
+    width: 70%;
 }
 
 .portfolio__gallery{

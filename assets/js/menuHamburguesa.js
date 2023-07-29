@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         icon_bars.style.opacity=1;
         icon_xmark.style.opacity=0;
       }
+
     });
     window.addEventListener("resize", ()=>{
         let size = parseInt(document.body.clientWidth);
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             icon_bars.style.opacity=1;
             icon_xmark.style.opacity=0;
         }
+        
     })
   });
 
